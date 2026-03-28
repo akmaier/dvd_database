@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DVD Shelf Database</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>DVD Shelf Database</h1>
+      <p>
+        Extracted from the provided shelf image. Use search and filters to quickly find a title.
+      </p>
+    </header>
+
+    <section class="source-panel">
+      <div>
+        <h2>Source Image</h2>
+        <p class="muted">
+          Place your original shelf photo at <code>assets/shelf.jpg</code> to show it here.
+        </p>
+      </div>
+      <img
+        id="shelf-image"
+        src="assets/shelf.jpg"
+        alt="DVD shelf source photo"
+        onerror="this.style.display='none';document.getElementById('missing-image').style.display='block'"
+      />
+      <p id="missing-image" class="missing-image" style="display:none;">
+        No source image found yet in <code>assets/shelf.jpg</code>.
+      </p>
+    </section>
+
+    <section class="filter-bar" aria-label="DVD filters">
+      <label>
+        Search title
+        <input id="search-input" type="search" placeholder="Type a title..." />
+      </label>
+      <label>
+        Genre
+        <select id="genre-filter">
+          <option value="">All genres</option>
+        </select>
+      </label>
+      <label>
+        Year
+        <select id="year-filter">
+          <option value="">All years</option>
+        </select>
+      </label>
+      <button id="reset-filters" type="button">Reset</button>
+    </section>
+
+    <section>
+      <p id="result-count" class="result-count"></p>
+      <ul id="dvd-list" class="dvd-grid" aria-live="polite"></ul>
+    </section>
+
+    <footer class="page-footer">
+      <small>Static demo built with HTML, CSS, and vanilla JavaScript.</small>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

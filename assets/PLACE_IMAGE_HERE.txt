@@ -1,0 +1,7 @@
+Place the original shelf photo in this folder and name it exactly:
+
+shelf.jpg
+
+The website uses this path:
+
+assets/shelf.jpg
