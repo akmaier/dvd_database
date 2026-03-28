@@ -41,17 +41,3 @@ Open:
 - A few entries are best-effort normalizations where spine text is partially occluded or blurred.
 - You can refine any record directly in `data/dvds.json`.
 
-## Publish to GitHub
-
-Because the parent repository can ignore this folder, copy `dvd_database/` into a dedicated repository when you want to publish it.
-
-Minimal steps:
-
-```bash
-mkdir dvd_database_repo
-cp -R dvd_database/* dvd_database_repo/
-cd dvd_database_repo
-git init
-git add .
-git commit -m "Initial DVD shelf database example"
-```
