@@ -10,14 +10,14 @@ graph LR
     end
 
     subgraph DVD Shelf Database
-        UC1[UC-01: Browse Collection]
-        UC2[UC-02: Search by Title]
-        UC3[UC-03: Filter by Genre]
-        UC4[UC-04: Filter by Year]
-        UC5[UC-05: Reset Filters]
-        UC6[UC-06: View DVD Detail]
-        UC7[UC-07: View Source Image]
-        UC8[UC-08: Edit Dataset]
+        UC1["UC-01: Browse Collection"]
+        UC2["UC-02: Search by Title"]
+        UC3["UC-03: Filter by Genre"]
+        UC4["UC-04: Filter by Year"]
+        UC5["UC-05: Reset Filters"]
+        UC6["UC-06: View DVD Detail"]
+        UC7["UC-07: View Source Image"]
+        UC8["UC-08: Edit Dataset"]
     end
 
     User --> UC1

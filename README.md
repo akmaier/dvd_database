@@ -35,6 +35,10 @@ Open:
 
 - http://localhost:8000/index.html
 
+## Documentation
+
+The [requirements analysis](docs/requirements/) was AI-generated and serves as an example of using AI-assisted documentation for vibe-coded projects. It includes requirements specifications, use case descriptions, sequence diagrams, and structural diagrams — all using Mermaid for native GitHub rendering.
+
 ## Notes on extraction quality
 
 - The dataset was created from the visible spines in the provided photo.
