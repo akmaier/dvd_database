@@ -1,5 +1,3 @@
-const dataPath = "data/dvds.json"
-
 const state = {
   allDvds: [],
   filtered: []
@@ -16,9 +14,8 @@ const elements = {
 
 init()
 
-async function init() {
-  const response = await fetch(dataPath)
-  state.allDvds = await response.json()
+function init() {
+  state.allDvds = DVD_DATA
 
   populateFilterOptions()
   bindEvents()

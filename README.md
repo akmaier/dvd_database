@@ -24,16 +24,7 @@ The index page will auto-display it when present.
 
 ## Run locally
 
-From this folder:
-
-```bash
-cd dvd_database
-python3 -m http.server 8000
-```
-
-Open:
-
-- http://localhost:8000/index.html
+Open `index.html` directly in your browser — no server required.
 
 ## Documentation
 

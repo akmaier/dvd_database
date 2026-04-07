@@ -1,9 +1,8 @@
-const dataPath = "data/dvds.json"
 const detailRoot = document.getElementById("detail-root")
 
 loadDetail()
 
-async function loadDetail() {
+function loadDetail() {
   const params = new URLSearchParams(window.location.search)
   const id = params.get("id")
 
@@ -12,9 +11,7 @@ async function loadDetail() {
     return
   }
 
-  const response = await fetch(dataPath)
-  const dvds = await response.json()
-  const dvd = dvds.find((entry) => entry.id === id)
+  const dvd = DVD_DATA.find((entry) => entry.id === id)
 
   if (!dvd) {
     renderMessage("DVD not found in dataset.")
